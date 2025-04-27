@@ -13,7 +13,7 @@ Booklyst is a web application that allows users to store and manage book data. U
 
 ## Project Structure
 ```
-projectdb
+Booklyst
 ├── src
 │   ├── app.js
 │   ├── controllers
