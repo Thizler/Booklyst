@@ -13,7 +13,7 @@ Booklyst is a web application that allows users to store and manage book data. U
 
 ## Project Structure
 ```
-Booklyst
+projectdb
 ├── src
 │   ├── app.js
 │   ├── controllers
@@ -46,7 +46,7 @@ Booklyst
 1. Clone the repository:
    ```
    git clone <repository-url>
-   cd Booklyst
+   cd projectdb
    ```
 
 2. Build and run the Docker containers:
