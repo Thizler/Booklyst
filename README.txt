@@ -37,7 +37,7 @@ Project NoSQL กลุ่มที่ 5
 
 2. src/controllers/userController.js
 -จัดการฟอร์มลงทะเบียน/ล็อกอิน
--สมัคร, ล็อกอิน, ล็อกเอาท์ผู้ใช้
+-สมัคร,ล็อกอิน,ล็อกเอาท์ผู้ใช้
 -ใช้ฟังก์ชันจาก UserModel จัดการข้อมูลใน Cassandra
 
 3. src/controllers/bookController.js
@@ -55,7 +55,7 @@ Project NoSQL กลุ่มที่ 5
 -เรียก UserController
 
 7. src/routes/bookRoutes.js
--เส้นทางสำหรับดู, เพิ่ม, แก้ไข, ลบหนังสือ
+-เส้นทางสำหรับดู,เพิ่ม,แก้ไข,ลบหนังสือ
 -เรียก BookController
 
 8. src/middleware/auth.js
