@@ -1,22 +1,22 @@
-Project NoSQL กลุ่มที่ 5
+# Project NoSQL กลุ่มที่ 5
 ไม่มีหรอกครับ โจทย์ที่ยากไป มีแต่ใจที่ไม่แข็งพอ
 นายคุณานนต์ หฤทัยธรรม	รหัสนิสิต 66102010134
 นายศิลายุชย์	โชติธรรมาภรณ์	รหัสนิสิต 66102010153
 นายธัญวรัตม์	ก.วิบูลย์ศักดิ์ศรี รหัสนิสิต 66102010567
 
-ระบบจัดการบันทึกหนังสือส่วนตัว (Personal book manager)
+# ระบบจัดการบันทึกหนังสือส่วนตัว (Personal book manager)
 เป็นเว็บแอปพลิเคชันที่ช่วยให้ผู้ใช้สามารถจัดการคอลเลกชันหนังสือส่วนตัวของตนเองได้
 ผู้ใช้สามารถสมัครสมาชิก, เข้าสู่ระบบ และทำการดำเนินการ CRUD (สร้าง, อ่าน, แก้ไข, ลบ) กับข้อมูลหนังสือของตนได้
 แอปพลิเคชันนี้สร้างขึ้นด้วย Node.js, Express.js, Cassandra และใช้ EJS สำหรับการสร้างหน้าตาเว็บไซต์
 
-เทคโนโลยีที่ใช้
+# เทคโนโลยีที่ใช้
 - Node.js, Express.js
 - Cassandra
 - EJS
 - CSS
 - Docker
 
-วิธีการติดตั้งและใช้งาน
+# วิธีการติดตั้งและใช้งาน
 - ติดตั้ง Docker Desktop และ Node.js
 - ติดตั้ง image ของ Cassandra ลงบน docker
 - ดาวน์โหลดไฟล์โปรเจคใน google drive
@@ -24,20 +24,21 @@ Project NoSQL กลุ่มที่ 5
 - สร้าง container ของ cassandra และ กำหนดพอร์ท ใน docker
 - ทำการรัน container นั้น ใน docker desktop
 - สร้าง keyspace ชื่อ book_catalog ด้วยคำสั่ง
-```
+
+```bash
 CREATE KEYSPACE book_catalog WITH replication = {'class': 'SimpleStrategy','replication_factor': 1};
 ```
 - ใช้คำสั่ง npm start ใน terminal ของ VScode
-```
+```bash
 npm start
 ```
 - เข้าไปที่ browser และไปยัง localhost:3000
-```
+```bash
 http://localhost:3000
 ```
 - เข้าใช้งานเว็ปไซต์
 
-การทำงานของไฟล์หลักๆ
+# การทำงานของไฟล์หลักๆ
 1. src/app.js
 - ตั้งค่า Express, Session, Body-parser
 - เชื่อมต่อ Cassandra
