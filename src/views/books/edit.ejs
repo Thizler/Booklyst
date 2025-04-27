@@ -90,7 +90,7 @@
     <div class="container">
         <h2>📘 Edit Book</h2>
 
-        <form action="/api/books/edit/<%= book.book_id %>" method="POST">
+        <form action="/bookshelf/books/edit/<%= book.book_id %>" method="POST">
             <div class="form-group">
                 <label for="title">Title:</label>
                 <input type="text" id="title" name="title" value="<%= book.title %>" required>
@@ -117,7 +117,7 @@
             
             <div class="form-group">
                 <button type="submit" class="btn-submit">Update Book</button>
-                <a href="/api/books" class="btn-cancel">Cancel</a>
+                <a href="/bookshelf/books" class="btn-cancel">Cancel</a>
             </div>
         </form>
     </div>

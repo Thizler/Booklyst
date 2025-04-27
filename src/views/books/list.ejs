@@ -105,7 +105,7 @@
         <h1>📚 My Book Catalog</h1>
         
         <div class="book-controls">
-            <a href="/api/books/add" class="btn-add">➕ Add New Book</a>
+            <a href="/bookshelf/books/add" class="btn-add">➕ Add New Book</a>
             <a href="/auth/logout" class="btn-logout">🚪 Logout</a>
         </div>
         
@@ -130,8 +130,8 @@
                                 </span>
                             </td>
                             <td class="actions">
-                                <a href="/api/books/edit/<%= book.book_id %>" class="btn-edit">Edit</a>
-                                <a href="/api/books/delete/<%= book.book_id %>" class="btn-delete" 
+                                <a href="/bookshelf/books/edit/<%= book.book_id %>" class="btn-edit">Edit</a>
+                                <a href="/bookshelf/books/delete/<%= book.book_id %>" class="btn-delete" 
                                    onclick="return confirm('Are you sure you want to delete this book?')">Delete</a>
                             </td>
                         </tr>

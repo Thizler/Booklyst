@@ -27,7 +27,7 @@ class BookController {
                 status, 
                 note 
             });
-            res.redirect('/api/books');
+            res.redirect('/bookshelf/books');
         } catch (error) {
             console.error('Error adding book:', error);
             res.status(500).send('Error adding book');
@@ -74,7 +74,7 @@ class BookController {
                 status, 
                 note 
             });
-            res.redirect('/api/books');
+            res.redirect('/bookshelf/books');
         } catch (error) {
             console.error('Error updating book:', error);
             res.status(500).send('Error updating book');
@@ -87,7 +87,7 @@ class BookController {
         
         try {
             await this.bookModel.deleteBook(userId, id);
-            res.redirect('/api/books');
+            res.redirect('/bookshelf/books');
         } catch (error) {
             console.error('Error deleting book:', error);
             res.status(500).send('Error deleting book');

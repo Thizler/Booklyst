@@ -56,7 +56,7 @@ class UserController {
                 email: user.email
             };
             
-            res.redirect('/api/books');
+            res.redirect('/bookshelf/books');
         } catch (error) {
             console.error('Registration error:', error);
             res.render('users/register', {
@@ -99,7 +99,7 @@ class UserController {
                 email: user.email
             };
             
-            res.redirect('/api/books');
+            res.redirect('/bookshelf/books');
         } catch (error) {
             console.error('Login error:', error);
             res.render('users/login', {

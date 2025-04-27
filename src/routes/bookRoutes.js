@@ -15,7 +15,7 @@ function setRoutes(app) {
     router.post('/books/edit/:id', bookController.updateBook.bind(bookController));
     router.get('/books/delete/:id', bookController.deleteBook.bind(bookController));
     
-    app.use('/api', router);
+    app.use('/bookshelf', router);
 }
 
 module.exports = setRoutes;

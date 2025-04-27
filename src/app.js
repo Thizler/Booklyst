@@ -59,14 +59,14 @@ setAuthRoutes(app);
 
 app.get('/', (req, res) => {
   if (req.session.user) {
-    res.redirect('/api/books');  // Redirect to books if logged in
+    res.redirect('/bookshelf/books');  // Redirect to books if logged in
   } else {
     res.redirect('/auth/login');  // Redirect to login if not logged in
   }
 });
 
 // Protect book routes with authentication
-app.use('/api', isAuthenticated);
+app.use('/bookshelf', isAuthenticated);
 
 // Book routes
 setBookRoutes(app);
