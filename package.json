@@ -1,17 +1,11 @@
 {
-  "name": "projectdb",
+  "name": "booklyst",
   "version": "1.0.0",
   "description": "A web application for managing book data with Cassandra as the database.",
   "main": "src/app.js",
   "scripts": {
     "start": "node src/app.js"
   },
-  "keywords": [
-    "books",
-    "cassandra",
-    "nodejs",
-    "express"
-  ],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
