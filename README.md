@@ -85,3 +85,9 @@ http://localhost:3000
 
 12. package.json
 - ข้อมูลโปรเจกต์ เช่น dependencies, ชื่อ
+
+## Authors
+Department of Computer Science, Srinakharinwirot University
+- Kunanon Hareutaitam - kunanon.mas@g.swu.ac.th
+- Thunwarat K Viboonsaksri - thunwarat.thun@g.swu.ac.th
+- Sirayuth Chotithammaporn - sirayuth.chotithammaporn@g.swu.ac.th
